@@ -3,13 +3,13 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
-// @author       You
-// @match        http://202.113.18.106/a70.htm?wlanuserip=10.22.100.63&wlanacip=null&wlanacname=null&vlanid=0&ip=10.22.100.63&ssid=null&areaID=null&mac=00-00-00-00-00-00&switch_url=null&ap_mac=null&client_mac=null&wlan=null
+// @author       lihaji
+// @match        http://202.113.18.106/a70.htm*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=18.106
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     // Your code here...
