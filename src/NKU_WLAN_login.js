@@ -66,6 +66,7 @@
     } else {
         // 不匹配任何前缀
         console.log("非法页面");
+        window.close();
     }
 
 
