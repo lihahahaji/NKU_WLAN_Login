@@ -19,6 +19,8 @@
     // 获取当前网址
     var currentURL = window.location.href;
 
+    // http://202.113.18.106/
+
     // 判断当前网址前缀
     if (currentURL.startsWith("http://202.113.18.106/a70.htm")) {
         // 在 http://202.113.18.106/a70.htm* 前缀下执行的代码
@@ -66,7 +68,7 @@
     } else {
         // 不匹配任何前缀
         console.log("非法页面");
-        window.close();
+        // window.close();
     }
 
 
