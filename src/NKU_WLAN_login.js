@@ -27,15 +27,19 @@
         console.log("登录界面");
         // 在登录界面 自动填充账号密码
 
-        var loginButton = document.querySelector('.edit_lobo_cell[value="登录(Login)"]');
-        var input_username = document.querySelector('.edit_lobo_cell[name="DDDDD"]');
-        var input_password = document.querySelector('.edit_lobo_cell[name="upass"]');
+        var loginButton = document.querySelector('#edit_body > div:nth-child(4) > div:nth-child(1) > form > input:nth-child(1)');
+        var input_username = document.querySelector('#userName');
+        var input_password = document.querySelector('#edit_body > div:nth-child(4) > div:nth-child(1) > form > input:nth-child(3)');
 
         // 检查是否成功获取到元素
         if (input_username && input_password) {
-            // 执行点击事件
-            input_username.value = user_name;
-            input_password.value = user_password;
+            if (input_username.value && input_password.value) { }
+            else {
+                // 执行点击事件
+                input_username.value = user_name;
+                input_password.value = user_password;
+            }
+
         } else {
             console.error('无法找到输入框');
         }
@@ -56,7 +60,7 @@
         console.log("AC认证失败界面");
         // 在 AC认证失败界面 返回登录界面进行二次登录
 
-        var returnButton = document.querySelector('.edit_lobo_cell[value="返回（Go Back）"]');
+        var returnButton = document.querySelector('#edit_body > div:nth-child(2) > div:nth-child(1) > input');
         // 检查是否成功获取到元素
         if (returnButton) {
             // 执行点击事件，返回登录界面
@@ -69,7 +73,5 @@
         // 不匹配任何前缀
         console.log("非法页面");
     }
-
-
 
 })();
